@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحية رمضان مع صورة</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div>
+        <h1>إرسال تحية رمضان مع صورة</h1>
+        <form id="nameForm">
+            <input type="text" id="name" placeholder="أدخل اسمك هنا" required>
+            <button align="left" type="submit">إرسال التحية مع صورة</button>
+        </form>
+
+    <div class="controls">
+        <div>
+        <input type="color" id="textColor" style="height:110px" value="#FFFFFF">
+        <select style="margin-top:10px" id="presetBackground">
+            <option value="r1.jpg">خلفية رمضان 1</option>
+            <option value="r2.jpg">خلفية رمضان 2</option>
+            <option value="r3.jpg">خلفية رمضان 3</option>
+        </select>
+        </div>
+        <div>
+        <select id="fontFamily">
+            <option value="Rubik">Rubik</option>
+            <option value="Fustat">Fustat</option>
+            <option value="IBM Plex Sans Arabic">IBM Plex Sans Arabic</option>
+        </select>
+        <br>
+        <input type="number" id="fontSize" value="45" style="width: 50px;" min="12" max="60">
+        </div>
+
+    </div>
+    </div>
+    
+    <div>
+    <canvas id="ramadanCanvas" width="600" height="400"></canvas>
+    <button id="downloadBtn" style="display:none;">تحميل الصورة</button>
+    </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
