@@ -28,7 +28,7 @@ document.getElementById("nameForm").addEventListener("submit", function(event) {
             ctx.shadowOffsetY = 2;
             ctx.shadowBlur = 4;
 
-            var message = "رمضان كريم\n كل عام وانت بخير  " + name;
+            var message = " 🌛رمضان مبارک ✨\n \n كل عام وانت بخير  " + name;
             var lines = message.split("\n");
             var yPosition = 100;
 
@@ -53,7 +53,7 @@ document.getElementById("nameForm").addEventListener("submit", function(event) {
         ctx.shadowOffsetY = 2;
         ctx.shadowBlur = 4;
 
-        var message = "رمضان كريم\n كل عام وانت بخير  " + name;
+        var message = "🌛رمضان مبارک ✨\n كل عام وانت بخير  \n " + name;
         var lines = message.split("\n");
         var yPosition = 100;
 
